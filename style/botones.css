@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+:root{
+    --facebook-color:#1778F2;
+    --twitter-color:#1Da1f2;
+    --whatsapp-color:#25D366;
+    --youtube-color:#f00;
+    --clr-primary: #00D5FF;
+    --clr-secondary: #0A2647;
+    --clr-container-bg: #e7e7e7;
+}
+
+.experiencia__botao--repo, .experience__botao--demo, .experience__botao--demo1, .experiencia__botao--repo1 {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 20px;
+    justify-items: center;
+    font-size: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+    border: none;
+    border-radius: 30px;
+    color: #FFF;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transform : scale(2); 
+}
+  
+.experiencia__botao--repo:hover {
+    animation: glow 2s linear infinite;
+}
+.experience__botao--demo:hover {
+    animation: glow 2s linear infinite;
+}
+
+.formcontato__botao{
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    justify-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+    border: none;
+    border-radius: 30px;
+    color: #FFF;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+  
+.experiencia__botao--repo1:hover, .formcontato__botao:hover {
+    animation: glow 2s linear infinite;
+}
+.experience__botao--demo1:hover, .formcontato__botao:hover {
+    animation: glow 2s linear infinite;
+}
+
+@keyframes glow{
+    0%{
+    box-shadow: 2px 2px 2px rgb(93, 52, 168),-2px -2px 20px rgb(93, 52, 168);}
+    
+    50%{
+    box-shadow: 2px 2px 2px rgb(81, 224, 210),-2px -2px 20px rgb(81, 224, 210)
+    }
+    100%{
+    box-shadow: 2px 2px 2px rgb(93, 52, 168),-2px -2px 20px rgb(93, 52, 168)
+    }
+}
+
+@media (max-width: 425px) {
+    .experiencia__botao--repo, .experience__botao--demo, .experience__botao--demo1, .experiencia__botao--repo1 {
+        margin: 20px 0;
+    }
+}
